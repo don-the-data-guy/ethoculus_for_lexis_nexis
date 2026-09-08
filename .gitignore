@@ -1,0 +1,49 @@
+# ==========================================
+# SECRETS
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# Lexis credentials / tokens
+*.token
+credentials.json
+secrets.json
+
+# ==========================================
+# LEXIS LICENSED / RAW CONTENT
+# Keep these local unless your license
+# expressly permits redistribution.
+# ==========================================
+runs/*
+!runs/.gitkeep
+
+data/raw/*
+reports/*.json
+reports/*.jsonl
+reports/*.html
+reports/*.md
+!reports/README.md
+
+# ==========================================
+# PYTHON
+# ==========================================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# ==========================================
+# MAC / IDE
+# ==========================================
+.DS_Store
+.vscode/
+.idea/
+
+# ==========================================
+# LOGS
+# ==========================================
+*.log
